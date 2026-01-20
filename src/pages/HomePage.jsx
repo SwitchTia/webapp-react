@@ -9,12 +9,13 @@ export default function HomePage() {
 
         <div className="hero-section">
           <h1>Unlimited movies, TV shows, and more</h1>
+         </div>
 
-          <h4 >Watch anywhere. Cancel anytime.</h4>
-          <h5>
+          <h2 >Watch anywhere. Cancel anytime.</h2>
+          <h3>
             Ready to watch? Browse our collection of amazing films and series.
-          </h5>
-        </div>
+          </h3>
+        
 
       </section>
     </>
