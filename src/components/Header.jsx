@@ -8,7 +8,7 @@ export default function Header({ nameApp }) {
     const headerLinks = [
 
         { title: "Home", path: "/" },
-        { title: "Movies", path: "/moovies" },
+        { title: "Movies", path: "/movies" },
 
     ];
 

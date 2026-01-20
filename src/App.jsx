@@ -4,6 +4,7 @@ import MoviesPage from './pages/MoviesPage';
 import Home from './pages/Home';
 import DefaultLayout from './layouts/DefaultLayout';
 
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 

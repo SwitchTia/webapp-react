@@ -20,8 +20,8 @@
     font-size: 34px;
     color: rgb(197, 59, 59);
     font-weight: bolder;
-    letter-spacing: 3px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .logo:hover {
@@ -75,7 +75,7 @@ li {
 .nav-item {
     display: none;
 
-    gap: 50px;
+    gap: 30px;
     font-size: 20px;
     color: rgb(197, 59, 59);
 } 
