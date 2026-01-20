@@ -1,0 +1,26 @@
+
+.home-container {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(39, 37, 37)
+}
+
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  
+  background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1920');
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+h1, h4, h5 {
+    color: white;
+
+}

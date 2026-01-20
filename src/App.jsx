@@ -1,7 +1,7 @@
 
 import './App.css'
 import MoviesPage from './pages/MoviesPage';
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
 import DefaultLayout from './layouts/DefaultLayout';
 
 
@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayout nameApp={nameApp} />}>
-            <Route element={<Home />} path="/" />
+            <Route element={<HomePage />} path="/" />
             <Route element={<MoviesPage />} path="/movies" />
           </Route>
         </Routes>
