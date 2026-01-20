@@ -1,0 +1,40 @@
+
+.movies-container {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(39, 37, 37)
+}
+
+.movies-container h1 {
+  color: rgb(197, 59, 59);
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.movie-card {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(111, 109, 109);
+    position: relative;
+    padding: 20px;
+
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+
+    z-index: 100;
+}
