@@ -1,6 +1,7 @@
 .header {
     background-color: rgb(34, 33, 33);
     padding: 20px;
+
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -20,7 +21,7 @@
     color: rgb(197, 59, 59);
     font-weight: bolder;
     letter-spacing: 3px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .logo:hover {
@@ -32,6 +33,7 @@
     gap: 20px;
     max-width: 500px;
     flex: 1;
+    margin-left: auto;
 }
 
 .search-bar input {
@@ -64,4 +66,20 @@
 .search-bar button:hover {
     background-color: rgb(235, 154, 166);
     color: rgb(196, 47, 47);
+}
+
+li {
+    list-style: none;
+}
+
+.nav-item {
+    display: none;
+
+    gap: 50px;
+    font-size: 20px;
+    color: rgb(197, 59, 59);
+} 
+
+.nav-link {
+    color: rgb(197, 59, 59);
 }

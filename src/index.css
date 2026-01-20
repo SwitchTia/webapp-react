@@ -4,8 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Cabin', sans-serif;
-  color: rgb(70, 63, 108);
-
 }
 
 img {
@@ -15,6 +13,10 @@ img {
 /* responsive mobile first */
 /* tablet */
 @media (min-width: 768px) {
+
+  .nav-item{
+    display: flex;
+  }
 
   .col {
     width: calc(100% / 4 - (10px * 3) / 4);
