@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import "./Header.css";
+
 
 export default function Header({ nameApp }) {
   
@@ -8,10 +10,23 @@ export default function Header({ nameApp }) {
     { title: "Movies", path: "/moovies" },
   ];
 
-  
+
   return (
-    <header>
-        <div></div>
-    </header>
+   <header className="header">
+            <div className="header-content">
+                <div className="logo">WEBAPP</div>
+
+                <div className="search-bar">
+                    <input
+                        type="text"
+                        placeholder="Searching for something?"
+                        
+                    />
+
+                    <button >Search</button>
+                </div>
+
+            </div>
+        </header>
   );
 }
