@@ -33,16 +33,6 @@ export default function Header({ nameApp }) {
                     </ul>
                 </div>
 
-                <div className="search-bar">
-                    <input
-                        type="text"
-                        placeholder="Searching for something?"
-
-                    />
-
-                    <button >Search</button>
-                </div>
-
             </div>
         </header>
     );

@@ -9,14 +9,25 @@ export default function HomePage() {
 
         <div className="hero-section">
           <h1>Unlimited movies, TV shows, and more</h1>
-         </div>
+        </div>
 
-          <h2 >Watch anywhere. Cancel anytime.</h2>
-          <h3>
+        <div className="search-section">
+          <h2>
             Ready to watch? Browse our collection of amazing films and series.
-          </h3>
-        
+          </h2>
 
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Searching for something?"
+
+            />
+
+            <button >Search</button>
+          </div>
+          <h2 >Watch anywhere. Cancel anytime.</h2>
+
+        </div>
       </section>
     </>
   );
