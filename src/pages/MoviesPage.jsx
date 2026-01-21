@@ -7,12 +7,13 @@ export default function MoviesPage() {
 
 
   const [movies, setMovies] = useState([]);
+   const backendBaseUrl = import.meta.env.VITE_BACKEND_URL;
 
   
   useEffect(() => {
   
     axios
-      .get("http://localhost:3000/api/movies")
+      .get(`${backendBaseUrl}/api/movies`)
       .then((resp) => {
         setMovies(resp.data.results);
       })
@@ -35,7 +36,7 @@ export default function MoviesPage() {
             
             <div className="card-img">
               <img 
-                src={`http://localhost:3000/imgs/${movie.image}`}
+                src={`${backendBaseUrl}/imgs/${movie.image}`}
                 alt={movie.title}
               />
             </div>
