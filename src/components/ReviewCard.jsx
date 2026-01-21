@@ -1,5 +1,8 @@
+import "./ReviewCard.css";
+
+
 export default function ReviewCard({ review }) {
-    
+
   return (
     <div className="review-card">
       

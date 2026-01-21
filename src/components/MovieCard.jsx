@@ -1,5 +1,6 @@
-
 import "../pages/MoviesPage.css";
+import { Link } from "react-router-dom";
+
 
 
 export default function MovieCard({ movie }) {
@@ -27,7 +28,11 @@ export default function MovieCard({ movie }) {
                 </div>
 
                 <div className="flex">
-                    <button className="seeDetailsBtn">See details</button>
+
+                    <Link to={`/movies/${movie.id}`} className="seeDetailsBtn">
+                        See details
+                    </Link>
+                    
                 </div>
 
             </div>
