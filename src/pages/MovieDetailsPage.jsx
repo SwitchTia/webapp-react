@@ -18,7 +18,7 @@ export default function MoviesDetailPage() {
 
     useEffect(() => {
         axios
-            .get (`${backendBaseUrl}/api/movies/${id}`)
+            .get(`${backendBaseUrl}/api/movies/${id}`)
             .then((resp) => {
                 setMovie(resp.data);
             })
@@ -37,25 +37,24 @@ export default function MoviesDetailPage() {
     }
 
     return (
-        <>
+        <> <div className="movie-container">
+
             <section
                 className="page-banner"
                 style={{
                     backgroundImage: `url(${backendBaseUrl}/imgs/${movie.image})`,
                 }}
             >
-                <div className="movie-container">
-                    <h1 className="movie-title">{movie.title}</h1>
-                </div>
             </section>
 
-            <div className="card-details">
+            <div className="movie-info">
+                <h1 >{movie.title}</h1>
                 <h2>Director: {movie.director}</h2>
                 <h3>Genre: {movie.genre}</h3>
                 <h3>Release year: {movie.release_year}</h3>
-                <h2 className="overview"> Description: {movie.abstract}</h2>
+                <h4 > Description: {movie.abstract}</h4>
             </div>
-            
+
             <section className="reviews">
                 <h2>Reviews:</h2>
                 <div className="reviews-grid">
@@ -71,12 +70,14 @@ export default function MoviesDetailPage() {
 
 
 
-            <div className="container py-5 text-center">
-                <a href="" onClick={goBack}>
+            <div className="go-back-btn">
+                <a href=""onClick={goBack}>
                     Go back to previous page
                 </a>
             </div>
-            
+
+        </div>
+
         </>
     );
 }

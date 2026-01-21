@@ -39,7 +39,7 @@
 }
 
 .card-img img {
-  border-radius: 10px;
+
   display: block;
   object-fit: cover;
   width: 100%;
@@ -87,15 +87,20 @@
 
   padding: 10px;
   cursor: pointer;
-   margin: 40px auto 0;
+  margin: 40px auto 0;
   display: block;
-   
+
 }
 
 .seeDetailsBtn:hover {
-    background-color: rgb(235, 154, 166);
-    color: rgb(196, 47, 47);
+  background-color: rgb(235, 154, 166);
+  color: rgb(196, 47, 47);
 }
 
 
+.overview {
+  margin-top: 10px;
+  font-size: small;
+  line-height: 1;
 
+}
