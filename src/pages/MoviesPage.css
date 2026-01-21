@@ -92,5 +92,10 @@
    
 }
 
+.seeDetailsBtn:hover {
+    background-color: rgb(235, 154, 166);
+    color: rgb(196, 47, 47);
+}
+
 
 

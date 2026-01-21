@@ -41,6 +41,12 @@ li {
     color: rgb(197, 59, 59);
 } 
 
+
+.nav-link:hover {
+    color: rgb(205, 102, 118);
+    
+}
+
 .nav-link {
     color: rgb(197, 59, 59);
 }
