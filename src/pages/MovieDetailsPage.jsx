@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReviewCard from "../components/ReviewCard";
 import { useNavigate, useParams } from "react-router-dom";
+import "./MovieDetailsPage.css";
 
 
 
@@ -17,9 +18,9 @@ export default function MoviesDetailPage() {
 
     useEffect(() => {
         axios
-            .get(`${backendBaseUrl}/api/movies/${id}`)
+            .get (`${backendBaseUrl}/api/movies/${id}`)
             .then((resp) => {
-                setBook(resp.data);
+                setMovie(resp.data);
             })
             .catch((err) => {
                 console.log(err);
@@ -31,6 +32,7 @@ export default function MoviesDetailPage() {
 
     function goBack(event) {
         event.preventDefault();
+
         navigate(-1);
     }
 
@@ -39,10 +41,10 @@ export default function MoviesDetailPage() {
             <section
                 className="page-banner"
                 style={{
-                    backgroundImage: `url(${backendBaseUrl}/images/${book.image})`,
+                    backgroundImage: `url(${backendBaseUrl}/imgs/${movie.image})`,
                 }}
             >
-                <div className="container">
+                <div className="movie-container">
                     <h1 className="movie-title">{movie.title}</h1>
                 </div>
             </section>

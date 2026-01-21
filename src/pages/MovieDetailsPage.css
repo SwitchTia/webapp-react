@@ -1,3 +1,18 @@
+.movie-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(39, 37, 37)
+}
+
+.movies-container h1 {
+  color: rgb(197, 59, 59);
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .page-banner {
   background-size: cover;
   background-position: center;
