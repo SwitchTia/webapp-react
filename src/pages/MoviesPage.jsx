@@ -27,7 +27,6 @@ export default function MoviesPage() {
 
   return (
     <div className="movies-container">
-      <h1>All Movies</h1>
       
       <div className="movies-grid">
         {movies.map((movie) => (
@@ -42,14 +41,20 @@ export default function MoviesPage() {
             </div>
             
             <div className="card-info">
-              <h3 className="card-title">{movie.title}</h3>
+              <h3 className="card-title"> {movie.title}</h3>
               
               <div className="card-details">
                 <p>Director: {movie.director}</p>
                 <p>Genre: {movie.genre}</p>
-                <p>Release year: {movie.year}</p>
-                <p className="overview">{movie.abstract}</p>
+                <p>Release year: {movie.release_year}</p>
+                <p className="overview"> Description: {movie.abstract}</p>
               </div>
+
+              <div className="flex">
+                <button className="seeDetailsBtn">See details</button>
+
+              </div>
+              
             </div>
             
           </div>

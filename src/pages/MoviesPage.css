@@ -1,6 +1,5 @@
-
 .movies-container {
-  padding: 40px 20px;
+  padding: 20px;
   max-width: 1400px;
   margin: 0 auto;
   background-color: rgb(39, 37, 37)
@@ -23,18 +22,75 @@
 }
 
 .movie-card {
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: rgb(111, 109, 109);
-    position: relative;
-    padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(31, 30, 30);
+  position: relative;
+  padding: 20px;
 
-    overflow: hidden;
-    transition: transform 0.3s;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .movie-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 
-    z-index: 100;
+  z-index: 100;
 }
+
+.card-img img {
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: rgb(245, 229, 229);
+  background: rgba(12, 12, 12, 0.8);
+  overflow-y: auto;
+}
+
+.card-title {
+  font-size: larger;
+  color: rgb(197, 59, 59);
+  text-align: center;
+
+}
+
+.movie-card:hover .card-info {
+  opacity: 1;
+}
+
+.card-details p {
+  margin-bottom: 15px;
+  color: rgb(228, 211, 211);
+}
+
+.seeDetailsBtn {
+  background-color: rgb(197, 59, 59);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+
+  padding: 10px;
+  cursor: pointer;
+   margin: 40px auto 0;
+  display: block;
+   
+}
+
+
+
