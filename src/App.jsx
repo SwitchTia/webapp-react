@@ -5,8 +5,8 @@ import HomePage from './pages/HomePage';
 import DefaultLayout from './layouts/DefaultLayout';
 import NotFoundPage from './pages/NotFoundPage';
 
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MoviesDetailPage from './pages/MovieDetailPage';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route element={<DefaultLayout nameApp={nameApp} />}>
             <Route element={<HomePage />} path="/" />
             <Route element={<MoviesPage />} path="/movies" />
+            <Route element={<MoviesDetailPage />} path="/movies/:id" />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
