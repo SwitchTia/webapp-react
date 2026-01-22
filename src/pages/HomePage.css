@@ -72,3 +72,18 @@
     color: rgb(196, 47, 47);
 }
 
+.movies-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(39, 37, 37)
+}
+
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
