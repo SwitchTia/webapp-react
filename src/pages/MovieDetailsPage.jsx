@@ -9,7 +9,7 @@ import "./MovieDetailsPage.css";
 export default function MoviesDetailPage() {
 
     const [movie, setMovie] = useState({});
-    const { id } = useParams();
+    const { slug } = useParams();
 
     const backendBaseUrl = import.meta.env.VITE_BACKEND_URL;
 
@@ -17,16 +17,20 @@ export default function MoviesDetailPage() {
 
 
     useEffect(() => {
+        getMovie();
+    }, [slug]);
+
+
+    function getMovie() {
         axios
-            .get(`${backendBaseUrl}/api/movies/${id}`)
+            .get(`${backendBaseUrl}/api/books/${slug}`)
             .then((resp) => {
                 setMovie(resp.data);
             })
             .catch((err) => {
                 console.log(err);
             });
-
-    }, [id]);
+    }
 
 
 

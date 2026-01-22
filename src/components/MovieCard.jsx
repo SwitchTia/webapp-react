@@ -8,7 +8,7 @@ export default function MovieCard({ movie }) {
     const backendBaseUrl = import.meta.env.VITE_BACKEND_URL;
 
     return (
-        <div key={movie.id} className="movie-card">
+        <div className="movie-card">
 
             <div className="card-img">
                 <img
@@ -26,7 +26,7 @@ export default function MovieCard({ movie }) {
 
                 <div className="flex">
 
-                    <Link to={`/movies/${movie.id}`} className="seeDetailsBtn">
+                    <Link to={`/movies/${movie.slug}`} className="seeDetailsBtn">
                         See details
                     </Link>
 
