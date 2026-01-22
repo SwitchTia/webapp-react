@@ -1,6 +1,6 @@
 .movie-container {
   padding: 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(39, 37, 37)
 }
@@ -14,6 +14,7 @@
   align-items: center;
   position: relative;
 }
+
 
 .page-banner::before {
 
@@ -76,6 +77,9 @@ a {
 
   padding: 10px;
   cursor: pointer;
+  text-align: center;
+  width: 300px;
+  
 }
 
 .go-back-btn:hover {

@@ -37,7 +37,7 @@ export default function MoviesDetailPage() {
     }
 
     return (
-        <> <div className="movie-container">
+        <> <div className=" movie-container">
 
             <section
                 className="page-banner"
@@ -48,15 +48,15 @@ export default function MoviesDetailPage() {
             </section>
 
             <div className="movie-info">
-                <h1 >{movie.title}</h1>
+
                 <h2>Director: {movie.director}</h2>
                 <h3>Genre: {movie.genre}</h3>
                 <h3>Release year: {movie.release_year}</h3>
-                <h4 > Description: {movie.abstract}</h4>
+                <h3 > Description: {movie.abstract}</h3>
             </div>
 
             <section className="reviews">
-                <h2>Reviews:</h2>
+                <h3>Reviews:</h3>
                 <div className="reviews-grid">
                     {movie.reviews && movie.reviews.length > 0 ? (
                         movie.reviews.map((review) => (
@@ -68,13 +68,13 @@ export default function MoviesDetailPage() {
                 </div>
             </section>
 
-
-
-            <div className="go-back-btn">
-                <a href=""onClick={goBack}>
-                    Go back to previous page
-                </a>
-            </div>
+            <section className="flex">
+                <div className=" go-back-btn">
+                    <a href="" onClick={goBack}>
+                        Go back to previous page
+                    </a>
+                </div>
+            </section>
 
         </div>
 

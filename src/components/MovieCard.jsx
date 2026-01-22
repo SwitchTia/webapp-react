@@ -1,4 +1,4 @@
-import "../pages/MoviesPage.css";
+import "./MovieCard.css";
 import { Link } from "react-router-dom";
 
 

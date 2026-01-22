@@ -10,6 +10,11 @@ img {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 /* responsive mobile first */
 /* tablet */
 @media (min-width: 768px) {
