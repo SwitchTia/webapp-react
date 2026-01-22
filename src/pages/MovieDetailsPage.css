@@ -80,3 +80,9 @@ a {
   color: rgb(197, 59, 59);;
 }
  
+.review-form-section {
+    background-color: rgb(39, 37, 37);
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}

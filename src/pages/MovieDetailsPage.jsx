@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ReviewCard from "../components/ReviewCard";
 import { useNavigate, useParams } from "react-router-dom";
 import "./MovieDetailsPage.css";
+import ReviewForm from "../components/ReviewForm";
 
 
 
@@ -70,6 +71,11 @@ export default function MoviesDetailPage() {
                         <p>There are no reviews</p>
                     )}
                 </div>
+            </section>
+
+            <section className="review-form-section">
+                <h3 className="red mb-20">Leave a Review:</h3>
+                <ReviewForm movieId={movie.id} reloadReviews={getMovie} />
             </section>
 
             <section className="flex">
