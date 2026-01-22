@@ -23,7 +23,7 @@ export default function MoviesDetailPage() {
 
     function getMovie() {
         axios
-            .get(`${backendBaseUrl}/api/books/${slug}`)
+            .get(`${backendBaseUrl}/api/movies/${slug}`)
             .then((resp) => {
                 setMovie(resp.data);
             })
