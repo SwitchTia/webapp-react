@@ -1,0 +1,53 @@
+.review-form {
+    background-color:rgb(20, 18, 18);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: rgb(245, 229, 229);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(39, 37, 37);
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 5px;
+    color: rgb(245, 229, 229);
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(197, 59, 59);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: rgb(197, 59, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 12px 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: rgb(220, 111, 128);
+}

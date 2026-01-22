@@ -60,6 +60,14 @@ export default function MoviesDetailPage() {
                 <h3 > Description: {movie.abstract}</h3>
             </div>
 
+            <section className="flex">
+                <div className=" go-back-btn">
+                    <a href="" onClick={goBack}>
+                        Go back to previous page
+                    </a>
+                </div>
+            </section>
+
             <section className="reviews">
                 <h3 className="red mb-20">Reviews:</h3>
                 <div className="reviews-grid">
@@ -73,17 +81,9 @@ export default function MoviesDetailPage() {
                 </div>
             </section>
 
-            <section className="review-form-section">
+            <section className="review-form-section ">
                 <h3 className="red mb-20">Leave a Review:</h3>
                 <ReviewForm movieId={movie.id} reloadReviews={getMovie} />
-            </section>
-
-            <section className="flex">
-                <div className=" go-back-btn">
-                    <a href="" onClick={goBack}>
-                        Go back to previous page
-                    </a>
-                </div>
             </section>
 
         </div>
