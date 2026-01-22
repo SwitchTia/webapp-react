@@ -18,6 +18,8 @@
     background-size: cover;
     background-position: center;
 
+    margin-bottom: 40px;
+
 }
 
 .search-section {
@@ -25,12 +27,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color:  rgb(197, 59, 59);;
 }
 
 .search-bar {
     display: inline-flex;
     gap: 20px;
     max-width: 500px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
    
 }
 
@@ -66,10 +72,3 @@
     color: rgb(196, 47, 47);
 }
 
-h2,
-h3 {
-    color: white;
-    margin: 30px;
-    color: rgb(163, 72, 72);
-
-}

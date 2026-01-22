@@ -34,7 +34,7 @@ export default function ReviewCard({ review }) {
                     {renderStars()}
                 </h4>
 
-        <h5 className="mb-30">Review: {review.text}</h5>
+        <h5 className="mb-30">Review: " {review.text} "</h5>
         <h5>Written on date:{review.created_at}</h5>
       </div>
 

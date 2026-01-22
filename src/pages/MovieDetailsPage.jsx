@@ -49,14 +49,14 @@ export default function MoviesDetailPage() {
 
             <div className="movie-info">
 
-                <h2>Director: {movie.director}</h2>
-                <h3>Genre: {movie.genre}</h3>
-                <h3>Release year: {movie.release_year}</h3>
+                <h3 className="mb-20">Director: {movie.director}</h3>
+                <h3 className="mb-20">Genre: {movie.genre}</h3>
+                <h3 className="mb-20">Release year: {movie.release_year}</h3>
                 <h3 > Description: {movie.abstract}</h3>
             </div>
 
             <section className="reviews">
-                <h3>Reviews:</h3>
+                <h3 className="red mb-20">Reviews:</h3>
                 <div className="reviews-grid">
                     {movie.reviews && movie.reviews.length > 0 ? (
                         movie.reviews.map((review) => (

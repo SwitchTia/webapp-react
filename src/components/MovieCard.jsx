@@ -18,21 +18,18 @@ export default function MovieCard({ movie }) {
             </div>
 
             <div className="card-info">
-                <h3 className="card-title"> {movie.title}</h3>
-
-                <div className="card-details">
-                    <p>Director: {movie.director}</p>
-                    <p>Genre: {movie.genre}</p>
-                    <p>Release year: {movie.release_year}</p>
-                    <p className="overview"> Description: {movie.abstract}</p>
-                </div>
+                <h3 className="card-title mb-20"> {movie.title}</h3>
+                <p className="mb-15">Director: {movie.director}</p>
+                <p className="mb-15">Genre: {movie.genre}</p>
+                <p className="mb-15">Release year: {movie.release_year}</p>
+                <p > Description: {movie.abstract}</p>
 
                 <div className="flex">
 
                     <Link to={`/movies/${movie.id}`} className="seeDetailsBtn">
                         See details
                     </Link>
-                    
+
                 </div>
 
             </div>

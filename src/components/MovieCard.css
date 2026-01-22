@@ -16,7 +16,7 @@
   z-index: 100;
 }
 
-.card-img img {
+.card-img {
 
   display: block;
   object-fit: cover;
@@ -51,7 +51,6 @@
 }
 
 
-
 .seeDetailsBtn {
   background-color: rgb(197, 59, 59);
   color: white;
@@ -62,7 +61,7 @@
 
   padding: 10px;
   cursor: pointer;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   display: block;
 
 }
@@ -72,10 +71,7 @@
   color: rgb(196, 47, 47);
 }
 
-
-.overview {
-  margin-top: 10px;
-  font-size: small;
-  line-height: 1;
-
+.mb-15 {
+    margin-bottom: 15px;
 }
+

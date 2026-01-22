@@ -1,6 +1,5 @@
 .movie-container {
-  padding: 20px;
-  max-width: 1200px;
+  
   margin: 0 auto;
   background-color: rgb(39, 37, 37)
 }
@@ -9,23 +8,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 800px;
+  min-height:1200px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-
-.page-banner::before {
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background: rgba(12, 12, 12, 0.7);
-}
 
 .movie-container {
   position: relative;
@@ -44,8 +32,6 @@
   margin: 0 auto;
   color: rgb(245, 229, 229);
 }
-
-
 
 
 .reviews {
@@ -85,3 +71,12 @@ a {
 .go-back-btn:hover {
     background-color: rgb(220, 111, 128);
 }
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.red {
+  color: rgb(197, 59, 59);;
+}
+ 
