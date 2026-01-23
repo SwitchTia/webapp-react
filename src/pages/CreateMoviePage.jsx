@@ -15,13 +15,9 @@ export default function CreateBookPage() {
   const [formData, setFormData] = useState(initialData);
   const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
 
-  
 
   const navigate = useNavigate();
  
-
-
-
   function updateFormData(event) {
     //to complete
   }
@@ -33,6 +29,7 @@ export default function CreateBookPage() {
     // to complete
   }
 
+  
   return (
     <section className="movie-form">
       <h1 >Add a new movies</h1>
